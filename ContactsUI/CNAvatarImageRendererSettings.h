@@ -1,4 +1,6 @@
-@class CNContactStore, PNPersonaStore, CNSchedulerProvider;
+#import <Contacts/CNContactStore.h>
+
+@class CNSchedulerProviderP, RPersonaStore;
 
 API_AVAILABLE(ios(14))
 @interface CNAvatarImageRendererSettings : NSObject
@@ -11,7 +13,7 @@ API_AVAILABLE(ios(14))
 + (instancetype)settingsWithContactStore:(CNContactStore *)contactStore cacheSize:(NSUInteger)cacheSize schedulerProvider:(CNSchedulerProvider *)schedulerProvider;
 + (instancetype)settingsWithContactStore:(CNContactStore *)contactStore cacheSize:(NSUInteger)cacheSize schedulerProvider:(CNSchedulerProvider *)schedulerProvider concurrentCaches:(BOOL)concurrentCaches;
 + (instancetype)settingsWithContactStore:(CNContactStore *)contactStore schedulerProvider:(CNSchedulerProvider *)schedulerProvider;
-+ (instancetype)settingsWithContactStore:(CNContactStore *)contactStore personaStrore:(PNPersonaStore *)personaStore;
++ (instancetype)settingsWithContactStore:(CNContactStore *)contactStore personaStrore:(PRPersonaStore *)personaStore;
 
 + (instancetype)offMainThreadSynchronousRenderingOnlySettingsWithCacheSize:(NSUInteger)cacheSize;
 
