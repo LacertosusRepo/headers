@@ -1,4 +1,6 @@
 #import <CNContacts/CNContact.h>
+#import <CoreGraphics/CoreGraphics.h>
+#import <Foundation/Foundation.h>
 
 @class CNAvatarImageRendererSettings, CNCancelationToken;
 
