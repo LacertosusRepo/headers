@@ -1,4 +1,4 @@
-#import <CNContacts/CNContact.h>
+#import <Contacts/CNContact.h>
 #import <CoreGraphics/CoreGraphics.h>
 #import <Foundation/Foundation.h>
 
