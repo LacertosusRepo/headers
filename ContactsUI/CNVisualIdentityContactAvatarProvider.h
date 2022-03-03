@@ -1,4 +1,6 @@
-@class CNAvatarImageRendererSettings, CNCancelationToken, CNContact;
+#import <CNContacts/CNContact.h>
+
+@class CNAvatarImageRendererSettings, CNCancelationToken;
 
 API_AVAILABLE(ios(14))
 @interface CNVisualIdentityContactAvatarProvider : NSObject
@@ -7,3 +9,8 @@ API_AVAILABLE(ios(14))
 - (CNCancelationToken *)avatarImageForContact:(CNContact *)arg1 withSize:(CGSize)arg2 includePlaceholder:(BOOL)arg3 imageHandler:(void (^)(UIImage *image))arg4;
 
 @end
+
+  /* TO-DO
+  - Check return type of avatarImageForContact
+  - Check if imageHandler is a completion handler type
+  */
